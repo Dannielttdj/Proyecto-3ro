@@ -18,7 +18,7 @@ class UsersSeeder extends Seeder
                 'name'=>'SuperAdmin',
                 'usu_nombre'=>'Daniel Torres',
                 'usu_telefono'=>'0999999999',
-                'email'=>'danieltorres@gmail.com',
+                'email'=>'danieltorres1@gmail.com',
                 'password'=>bcrypt('12345678')
             ]
         );
@@ -28,7 +28,7 @@ class UsersSeeder extends Seeder
                 'name'=>'Pedro',
                 'usu_nombre'=>'Pedro Pascal',
                 'usu_telefono'=>'0999999999',
-                'email'=>'pedrito@gmail.com',
+                'email'=>'pedrito1@gmail.com',
                 'password'=>bcrypt('123456789s')
             ]
         );

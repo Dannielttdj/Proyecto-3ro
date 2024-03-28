@@ -4,6 +4,11 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CursosController;
 use App\Http\Controllers\UsersController;
+use App\Http\Controllers\GeneraOrdenesController;
+use App\Models\User;
+use App\Models\Cursos;
+use Maatwebsite\Excel\Concerns\FromCollection;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +35,10 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 
     Route::resource('cursos',CursosController::class);
-
     Route::resource('users',UsersController::class);
     
+    Route::get('/genera_ordenes.index',[GeneraOrdenesController::class,'index'])->name('genera_ordenes.index');
+    Route::post('/GenerarOrdenes',[GeneraOrdenesController::class,'generarOrdenes'])->name('GenerarOrdenes');
 
 
 
